@@ -383,7 +383,7 @@ const T = {
     festival: {
       title: 'Ot Festivali Şef Menü',
       subtitle: 'Şefimizden mevsimin en taze otlarıyla hazırlanmış özel menü',
-      priceLabel: 'Kişi başı',
+      priceLabel: 'Iki(2) kişi',
       price: '4.287,13 ₺',
       badge: 'Özel Etkinlik',
     },
@@ -399,7 +399,7 @@ const T = {
     festival: {
       title: "Herb Festival Chef's Menu",
       subtitle: 'A special menu by our chef with the freshest herbs of the season',
-      priceLabel: 'Per person',
+      priceLabel: 'For two',
       price: '4.287,13 ₺',
       badge: 'Special Event',
     },
