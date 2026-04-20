@@ -383,7 +383,7 @@ const T = {
     festival: {
       title: 'Ot Festivali Şef Menü',
       subtitle: 'Şefimizden mevsimin en taze otlarıyla hazırlanmış özel menü',
-      priceLabel: 'Iki(2) kişi',
+      priceLabel: 'iki(2) kişi',
       price: '4.287,13 ₺',
       badge: 'Özel Etkinlik',
     },
