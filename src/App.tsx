@@ -32,6 +32,13 @@ const FOOD_MENU_TR: Section[] = [
       { name: 'Mersin Patates, Domuz Pastırma, Kıl Biber', price: '999,99 ₺' },
       { name: 'İsli Yoğurt, Kızarmış Patron Biber', price: '392,71 ₺' },
       { name: 'Yeşil Zeytinli Soğan Dolması', price: '437,28 ₺' },
+      { name: 'Domatesli Izgara Uskumru' },
+      { name: 'Dere Otlu Mücver' },
+      { name: 'İsli Tahinli Izgara Patlıcan' },
+      { name: 'Mangolu Levrek Marin' },
+      { name: 'Otlu Enginar Dolması' },
+      { name: 'Pancar Carpaccio' },
+      { name: 'Sıcak Ege Otları' },
     ],
   },
   {
@@ -82,6 +89,13 @@ const FOOD_MENU_EN: Section[] = [
       { name: 'Mersin Potato, Cured Pork, Hair Pepper', price: '999,99 ₺' },
       { name: 'Smoked Yoghurt, Fried Padrón Pepper', price: '392,71 ₺' },
       { name: 'Green Olive Stuffed Onion', price: '437,28 ₺' },
+      { name: 'Grilled Mackerel with Tomato' },
+      { name: 'Dill Mücver (Zucchini Fritters)' },
+      { name: 'Smoked Tahini Grilled Aubergine' },
+      { name: 'Mango Marinated Sea Bass' },
+      { name: 'Herbed Stuffed Artichoke' },
+      { name: 'Beetroot Carpaccio' },
+      { name: 'Warm Aegean Herbs' },
     ],
   },
   {
@@ -353,23 +367,23 @@ const BAR_MENU_EN: Section[] = [
 ];
 
 const OT_FESTIVAL_TR: Item[] = [
-  { name: 'Domatesli Izgara Uskumru' },
-  { name: 'Dere Otlu Mücver' },
-  { name: 'İsli Tahinli Izgara Patlıcan' },
-  { name: 'Mangolu Levrek Marin' },
-  { name: 'Otlu Enginar Dolması' },
-  { name: 'Pancar Carpaccio' },
-  { name: 'Sıcak Ege Otları' },
+  { name: 'Itırlı Tereyağ' },
+  { name: 'Enginar Dolması' },
+  { name: 'Otlu Mücver' },
+  { name: 'Sıcak Ot Tabağı' },
+  { name: 'Çağlalı Yeşil Salata' },
+  { name: 'Otlu Levrek Poşe' },
+  { name: 'Kabak Çiçeği Çikolatalı Mousse' },
 ];
 
 const OT_FESTIVAL_EN: Item[] = [
-  { name: 'Grilled Mackerel with Tomato' },
-  { name: 'Dill Mücver (Zucchini Fritters)' },
-  { name: 'Smoked Tahini Grilled Aubergine' },
-  { name: 'Mango Marinated Sea Bass' },
-  { name: 'Herbed Stuffed Artichoke' },
-  { name: 'Beetroot Carpaccio' },
-  { name: 'Warm Aegean Herbs' },
+  { name: 'Herb-Scented Butter' },
+  { name: 'Stuffed Artichoke' },
+  { name: 'Herbed Zucchini Fritters' },
+  { name: 'Warm Herb Plate' },
+  { name: 'Green Salad with Çağla (Unripe Almonds)' },
+  { name: 'Poached Sea Bass with Herbs' },
+  { name: 'Zucchini Flower Chocolate Mousse' },
 ];
 
 /* ═══════════════════════════════════════════════════════════════════════
