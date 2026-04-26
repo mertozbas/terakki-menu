@@ -65,17 +65,17 @@ const FOOD_MENU_EN: Section[] = [
     category: 'Starters',
     items: [
       { name: 'Herb Butter & Sourdough Bread', price: '0 ₺' },
-      { name: 'Smoked Yoghurt with Fried Aubergine', price: '447,84 ₺' },
+      { name: 'Smoked Yogurt with Fried Eggplant', price: '447,84 ₺' },
       { name: 'Crispy Duck with Rakı', description: 'With sautéed radicchio', price: '581,14 ₺' },
       { name: 'Grilled Octopus', description: 'Chimichurri sauce', price: '999,18 ₺' },
       { name: 'Orange Artichoke', description: 'With pearl onion', price: '777,17 ₺' },
-      { name: 'Beetroot Carpaccio', description: 'With ricotta cheese', price: '733,19 ₺' },
-      { name: 'Smoked Tahini Grilled Aubergine', price: '653,28 ₺' },
-      { name: 'Prawn Skewer', description: 'Grilled with lime & chili mayo', price: '892,48 ₺' },
+      { name: 'Beet Carpaccio', description: 'With ricotta cheese', price: '733,19 ₺' },
+      { name: 'Smoked Tahini Grilled Eggplant', price: '653,28 ₺' },
+      { name: 'Shrimp Skewer', description: 'Grilled with lime & chili mayo', price: '892,48 ₺' },
       { name: 'Grilled Baby Calamari Skewer', price: '892,48 ₺' },
       { name: 'Mango Marinated Sea Bass', price: '810,45 ₺' },
       { name: 'Mezze Trio I', description: 'Mustard hummus, Cretan spread, walnut muhammara', price: '739,58 ₺' },
-      { name: 'Mezze Trio II', description: 'Foamy haydari, pink sultan, strained yoghurt with avarece', price: '739,58 ₺' },
+      { name: 'Mezze Trio II', description: 'Foamy haydari, pink sultan, strained yogurt with avarece', price: '739,58 ₺' },
       { name: 'Grilled Liver', price: '890,35 ₺' },
       { name: 'Atom Kokoreç', description: 'With avocado', price: '1.265,96 ₺' },
       { name: 'Green Olive Stuffed Onion', price: '521,25 ₺' },
@@ -111,60 +111,36 @@ const FOOD_MENU_EN: Section[] = [
 
 const BAR_MENU_COMMON: Section[] = [
   {
-    category: 'Kırmızı Şarap — Kadeh',
+    category: 'Kırmızı',
+    note: 'Kadeh / Şişe',
     items: [
-      { name: 'Ancyra Cabernet Sauvignon', price: '650 ₺' },
-      { name: 'Urla Tempus', price: '950 ₺' },
-      { name: 'Urla Boğazkere', price: '850 ₺' },
-      { name: 'Vinkara Kalecik Karası', price: '1.050 ₺' },
-      { name: 'Paşaeli Yaşlı Asma', price: '1.050 ₺' },
-      { name: 'Paşaeli Çalkarası', price: '950 ₺' },
+      { name: 'Ancyra Cabernet Sauvignon Syrah', price: '675 ₺ / 3.035 ₺' },
+      { name: 'Urla Boğazkere', price: '4.375 ₺' },
+      { name: 'Paşaeli Çalkarası', price: '5.115 ₺' },
+      { name: 'Vinkara Kalecik Karası', price: '5.375 ₺' },
+      { name: 'Urla Vourla', price: '1.110 ₺ / 5.535 ₺' },
+      { name: 'Paşaeli Yaşlı Asma', price: '5.865 ₺' },
     ],
   },
   {
-    category: 'Beyaz Şarap — Kadeh',
+    category: 'Beyaz',
+    note: 'Kadeh / Şişe',
     items: [
-      { name: 'İsabey Chardonnay', price: '770 ₺' },
-      { name: 'Ancyra Sauvignon Blanc', price: '650 ₺' },
-      { name: 'Plato Narince', price: '795 ₺' },
-      { name: 'Kavaklıdere Emir', price: '770 ₺' },
+      { name: 'Ancyra Sauvignon Blanc', price: '675 ₺ / 3.275 ₺' },
+      { name: 'Kavaklıdere Emir', price: '825 ₺ / 3.295 ₺' },
+      { name: 'Kavaklıdere Misket', price: '3.295 ₺' },
+      { name: 'Plato Narince', price: '3.900 ₺' },
+      { name: "Sevilen Fronc de' Pied", price: '9.750 ₺' },
     ],
   },
   {
-    category: 'Rose Şarap — Kadeh',
+    category: 'Rose',
+    note: 'Kadeh / Şişe',
     items: [
-      { name: 'Urla Serendias', price: '725 ₺' },
-      { name: 'Vinkara Minoj', price: '650 ₺' },
-    ],
-  },
-  {
-    category: 'Kırmızı Şarap — Şişe',
-    items: [
-      { name: 'Ancyra Cabernet Sauvignon', price: '2.950 ₺' },
-      { name: 'Urla Boğazkere', price: '4.250 ₺' },
-      { name: 'Urla Tempus', price: '4.950 ₺' },
-      { name: 'Vinkara Kalecik Karası', price: '5.250 ₺' },
-      { name: 'Paşaeli Yaşlı Asma', price: '5.750 ₺' },
-      { name: 'Paşaeli Çalkarası', price: '4.950 ₺' },
-    ],
-  },
-  {
-    category: 'Beyaz Şarap — Şişe',
-    items: [
-      { name: 'İsabey Chardonnay', price: '3.250 ₺' },
-      { name: 'Ancyra Sauvignon Blanc', price: '3.150 ₺' },
-      { name: 'Plato Narince', price: '3.600 ₺' },
-      { name: 'Sevilen Froncde', price: '9.750 ₺' },
-      { name: 'Kavaklıdere Emir', price: '3.250 ₺' },
-      { name: 'Kavaklıdere Misket', price: '3.250 ₺' },
-    ],
-  },
-  {
-    category: 'Rose Şarap — Şişe',
-    items: [
-      { name: 'Urla Serendias', price: '3.250 ₺' },
-      { name: 'Vinkara Minoj', price: '2.750 ₺' },
-      { name: 'Sevilen Innocent', price: '3.300 ₺' },
+      { name: 'Ancyra Blush', price: '675 ₺ / 3.035 ₺' },
+      { name: 'Smyrna Blush', price: '875 ₺ / 3.500 ₺' },
+      { name: 'Sevilen Innocent Angel', price: '3.600 ₺' },
+      { name: 'Urla Serendias', price: '3.950 ₺' },
     ],
   },
   {
@@ -273,11 +249,11 @@ const BAR_MENU_COMMON: Section[] = [
   {
     category: 'Şampanya',
     items: [
-      { name: 'Ruffino', price: '1.150 ₺' },
-      { name: 'Moët Ice', price: '11.000 ₺' },
-      { name: 'Moët Rose', price: '12.500 ₺' },
-      { name: 'Moët', price: '9.000 ₺' },
-      { name: 'Dom Pérignon', price: '42.000 ₺' },
+      { name: 'Dom Pérignon', price: '46.000 ₺' },
+      { name: 'Moët', price: '11.000 ₺' },
+      { name: 'Moët Rosé', price: '14.000 ₺' },
+      { name: 'Moët Ice', price: '14.000 ₺' },
+      { name: 'Ruffino Prosecco', price: '8.500 ₺' },
     ],
   },
 ];
@@ -334,19 +310,16 @@ const BAR_MENU_EN: Section[] = [
   ...BAR_MENU_COMMON.map((s) => ({
     ...s,
     category: s.category
-      .replace('Kırmızı Şarap — Kadeh', 'Red Wine — Glass')
-      .replace('Beyaz Şarap — Kadeh', 'White Wine — Glass')
-      .replace('Rose Şarap — Kadeh', 'Rosé Wine — Glass')
-      .replace('Kırmızı Şarap — Şişe', 'Red Wine — Bottle')
-      .replace('Beyaz Şarap — Şişe', 'White Wine — Bottle')
-      .replace('Rose Şarap — Şişe', 'Rosé Wine — Bottle')
-      .replace('Rakı', 'Rakı')
+      .replace('Kırmızı', 'Red Wine')
+      .replace('Beyaz', 'White Wine')
+      .replace('Rose', 'Rosé Wine')
       .replace('Cin', 'Gin')
       .replace('Votka', 'Vodka')
       .replace('Tekila', 'Tequila')
       .replace('Rom', 'Rum')
       .replace('Konyak', 'Cognac')
       .replace('Şampanya', 'Champagne'),
+    note: s.note?.replace('Kadeh / Şişe', 'Glass / Bottle'),
   })),
 ];
 
@@ -392,7 +365,7 @@ const T = {
     },
   },
   en: {
-    tagline: 'A sincere Alaçatı flavour from the heart of the Aegean',
+    tagline: 'A sincere Alaçatı flavor from the heart of the Aegean',
     tabs: { food: 'Food', bar: 'Bar', festival: 'Herb Festival' },
     festival: {
       title: "Herb Festival Chef's Menu",
