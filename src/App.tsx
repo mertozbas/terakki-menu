@@ -16,7 +16,7 @@ const FOOD_MENU_TR: Section[] = [
     category: 'Başlangıç',
     items: [
       { name: 'İtırlı Tereyağ & Ekşi Mayalı Ekmek', price: '0 ₺' },
-      { name: 'İsli Yoğurt ve Kızarmış Patlıcan ile', price: '447,84 ₺' },
+      { name: 'İsli Yoğurt ve Kızarmış Patron Biberi', price: '447,84 ₺' },
       { name: 'Rakılı Çıtır Ördek', description: 'Ekşi sote radika ile', price: '581,14 ₺' },
       { name: 'Izgara Ahtapot', description: 'Chimichurri soslu', price: '999,18 ₺' },
       { name: 'Portakallı Enginar', description: 'Arpacık soğan ile', price: '777,17 ₺' },
@@ -65,7 +65,7 @@ const FOOD_MENU_EN: Section[] = [
     category: 'Starters',
     items: [
       { name: 'Herb Butter & Sourdough Bread', price: '0 ₺' },
-      { name: 'Smoked Yogurt with Fried Eggplant', price: '447,84 ₺' },
+      { name: 'Smoked Yogurt with Fried Padrón Pepper', price: '447,84 ₺' },
       { name: 'Crispy Duck with Rakı', description: 'With sautéed radicchio', price: '581,14 ₺' },
       { name: 'Grilled Octopus', description: 'Chimichurri sauce', price: '999,18 ₺' },
       { name: 'Orange Artichoke', description: 'With pearl onion', price: '777,17 ₺' },
