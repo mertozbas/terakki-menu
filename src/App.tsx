@@ -323,24 +323,64 @@ const BAR_MENU_EN: Section[] = [
   })),
 ];
 
-const OT_FESTIVAL_TR: Item[] = [
-  { name: 'Itırlı Tereyağ' },
-  { name: 'Enginar Dolması' },
-  { name: 'Otlu Mücver' },
-  { name: 'Sıcak Ot Tabağı' },
-  { name: 'Çağlalı Yeşil Salata' },
-  { name: 'Otlu Levrek Poşe' },
-  { name: 'Kabak Çiçeği Çikolatalı Mousse' },
+type ChefMenu = { title: string; items: string[]; price: string };
+
+const CHEF_MENUS_TR: ChefMenu[] = [
+  {
+    title: 'Şef Menü I',
+    price: '5.181,21 ₺',
+    items: [
+      'Meze Trio I',
+      'İsli Yoğurt ve Kızarmış Patron Biberi',
+      'Portakallı Enginar (arpacık soğan ile)',
+      'Izgara Şiş Baby Kalamar',
+      'İstanbul Salata',
+      'Izgara Levrek',
+      'Çıtır Baklava / Tiramisu',
+    ],
+  },
+  {
+    title: 'Şef Menü II',
+    price: '5.687,16 ₺',
+    items: [
+      'Meze Trio II',
+      'Rakılı Çıtır Ördek (ekşi sote radika ile)',
+      'Yeşil Zeytinli Soğan Dolması',
+      'Izgara Ciğer',
+      'İstanbul Salata',
+      'Kuzu Sırtı (sıcak humus ve ege otları ile)',
+      'Çıtır Baklava / Tiramisu',
+    ],
+  },
 ];
 
-const OT_FESTIVAL_EN: Item[] = [
-  { name: 'Herb-Scented Butter' },
-  { name: 'Stuffed Artichoke' },
-  { name: 'Herbed Zucchini Fritters' },
-  { name: 'Warm Herb Plate' },
-  { name: 'Green Salad with Çağla (Unripe Almonds)' },
-  { name: 'Poached Sea Bass with Herbs' },
-  { name: 'Zucchini Flower Chocolate Mousse' },
+const CHEF_MENUS_EN: ChefMenu[] = [
+  {
+    title: "Chef's Menu I",
+    price: '5.181,21 ₺',
+    items: [
+      'Mezze Trio I',
+      'Smoked Yogurt with Fried Padrón Pepper',
+      'Orange Artichoke (with pearl onion)',
+      'Grilled Baby Calamari Skewer',
+      'Istanbul Salad',
+      'Grilled Sea Bass',
+      'Crispy Baklava / Tiramisu',
+    ],
+  },
+  {
+    title: "Chef's Menu II",
+    price: '5.687,16 ₺',
+    items: [
+      'Mezze Trio II',
+      'Crispy Duck with Rakı (with sautéed radicchio)',
+      'Green Olive Stuffed Onion',
+      'Grilled Liver',
+      'Istanbul Salad',
+      'Lamb Loin (with warm hummus and Aegean herbs)',
+      'Crispy Baklava / Tiramisu',
+    ],
+  },
 ];
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -350,13 +390,12 @@ const OT_FESTIVAL_EN: Item[] = [
 const T = {
   tr: {
     tagline: "Ege'nin kalbinden samimi bir Alaçatı lezzeti",
-    tabs: { food: 'Yemek', bar: 'Bar', festival: 'Ot Festivali' },
-    festival: {
-      title: 'Ot Festivali Şef Menü',
-      subtitle: 'Şefimizden mevsimin en taze otlarıyla hazırlanmış özel menü',
+    tabs: { food: 'Yemek', bar: 'Bar', chef: 'Şef Menü' },
+    chef: {
+      title: 'Şef Menüleri',
+      subtitle: 'Şefimizden iki(2) kişilik özel seçki menüler',
       priceLabel: 'iki(2) kişi',
-      price: '4.287,13 ₺',
-      badge: 'Özel Etkinlik',
+      badge: 'Şef Seçkisi',
     },
     footer: {
       address: 'Hacı Memiş Mah. 2012 Sokak No:12, Alaçatı / İzmir',
@@ -366,13 +405,12 @@ const T = {
   },
   en: {
     tagline: 'A sincere Alaçatı flavor from the heart of the Aegean',
-    tabs: { food: 'Food', bar: 'Bar', festival: 'Herb Festival' },
-    festival: {
-      title: "Herb Festival Chef's Menu",
-      subtitle: 'A special menu by our chef with the freshest herbs of the season',
+    tabs: { food: 'Food', bar: 'Bar', chef: "Chef's Menu" },
+    chef: {
+      title: "Chef's Menus",
+      subtitle: 'Curated tasting menus by our chef for two',
       priceLabel: 'For two',
-      price: '4.287,13 ₺',
-      badge: 'Special Event',
+      badge: "Chef's Selection",
     },
     footer: {
       address: 'Hacı Memiş Mah. 2012 Sokak No:12, Alaçatı / İzmir',
@@ -383,7 +421,7 @@ const T = {
 } as const;
 
 type Lang = 'tr' | 'en';
-type Tab = 'food' | 'bar' | 'festival';
+type Tab = 'food' | 'bar' | 'chef';
 
 /* ═══════════════════════════════════════════════════════════════════════
    SECTION RENDERER
@@ -441,7 +479,7 @@ export default function App() {
   const t = T[lang];
   const foodData = lang === 'tr' ? FOOD_MENU_TR : FOOD_MENU_EN;
   const barData = lang === 'tr' ? BAR_MENU_TR : BAR_MENU_EN;
-  const festivalData = lang === 'tr' ? OT_FESTIVAL_TR : OT_FESTIVAL_EN;
+  const chefData = lang === 'tr' ? CHEF_MENUS_TR : CHEF_MENUS_EN;
 
   return (
     <div className="min-h-screen bg-[#e9e8e3] text-stone-900 flex flex-col">
@@ -477,7 +515,7 @@ export default function App() {
       <nav className="sticky top-16 z-30 bg-[#e9e8e3]/95 backdrop-blur-sm">
         <div className="max-w-3xl mx-auto px-5 pb-3 pt-2">
           <div className="grid grid-cols-3 border border-stone-300">
-            {(['food', 'bar', 'festival'] as Tab[]).map((k) => (
+            {(['food', 'bar', 'chef'] as Tab[]).map((k) => (
               <button
                 key={k}
                 onClick={() => setTab(k)}
@@ -525,51 +563,63 @@ export default function App() {
             </motion.div>
           )}
 
-          {tab === 'festival' && (
+          {tab === 'chef' && (
             <motion.div
-              key="festival"
+              key="chef"
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -4 }}
               transition={{ duration: 0.35 }}
             >
-              <div className="text-center mb-10">
+              <div className="text-center mb-12">
                 <p className="text-[10px] tracking-[0.25em] uppercase text-stone-400 mb-3 font-sans">
-                  {t.festival.badge}
+                  {t.chef.badge}
                 </p>
                 <h2 className="font-serif italic text-4xl md:text-5xl text-stone-900 mb-4">
-                  {t.festival.title}
+                  {t.chef.title}
                 </h2>
                 <p className="font-serif italic text-stone-500 text-base max-w-lg mx-auto leading-relaxed">
-                  {t.festival.subtitle}
+                  {t.chef.subtitle}
                 </p>
                 <div className="w-12 h-px bg-stone-300 mx-auto mt-6" />
               </div>
 
-              <div className="max-w-xl mx-auto">
-                <ol className="space-y-6 mb-10">
-                  {festivalData.map((item, idx) => (
-                    <motion.li
-                      key={item.name}
-                      initial={{ opacity: 0, x: -6 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: idx * 0.06 }}
-                      className="flex items-baseline gap-4 pb-4 border-b border-stone-200"
-                    >
-                      <span className="font-serif italic text-stone-400 text-base shrink-0 w-6">
-                        {String(idx + 1).padStart(2, '0')}
-                      </span>
-                      <span className="font-serif text-stone-900 text-lg">{item.name}</span>
-                    </motion.li>
-                  ))}
-                </ol>
+              <div className="max-w-xl mx-auto space-y-16">
+                {chefData.map((menu, mIdx) => (
+                  <motion.div
+                    key={menu.title}
+                    initial={{ opacity: 0, y: 8 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: mIdx * 0.1, duration: 0.4 }}
+                  >
+                    <h3 className="font-serif italic text-3xl md:text-4xl text-stone-900 mb-8 text-center">
+                      {menu.title}
+                    </h3>
+                    <ol className="space-y-5 mb-8">
+                      {menu.items.map((item, idx) => (
+                        <motion.li
+                          key={item}
+                          initial={{ opacity: 0, x: -6 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: idx * 0.05 }}
+                          className="flex items-baseline gap-4 pb-4 border-b border-stone-200"
+                        >
+                          <span className="font-serif italic text-stone-400 text-base shrink-0 w-6">
+                            {String(idx + 1).padStart(2, '0')}
+                          </span>
+                          <span className="font-serif text-stone-900 text-lg">{item}</span>
+                        </motion.li>
+                      ))}
+                    </ol>
 
-                <div className="text-center border border-stone-300 py-8 px-6 bg-stone-100/40">
-                  <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-stone-400 mb-2">
-                    {t.festival.priceLabel}
-                  </p>
-                  <p className="font-serif text-4xl text-stone-900">{t.festival.price}</p>
-                </div>
+                    <div className="text-center border border-stone-300 py-7 px-6 bg-stone-100/40">
+                      <p className="font-sans text-[10px] tracking-[0.25em] uppercase text-stone-400 mb-2">
+                        {t.chef.priceLabel}
+                      </p>
+                      <p className="font-serif text-3xl md:text-4xl text-stone-900">{menu.price}</p>
+                    </div>
+                  </motion.div>
+                ))}
               </div>
             </motion.div>
           )}
