@@ -150,7 +150,7 @@ const BAR_MENU_COMMON: Section[] = [
       { name: 'Singleton 12', price: '825 ₺' },
       { name: 'Glenlivet 12', price: '825 ₺' },
       { name: 'Lagavulin 8', price: '935 ₺' },
-      { name: 'Macallan 12', price: '1.110 ₺' },
+      { name: 'Macalallan 12', price: '1.110 ₺' },
     ],
   },
   {
@@ -166,8 +166,8 @@ const BAR_MENU_COMMON: Section[] = [
   {
     category: 'Irish',
     items: [
-      { name: 'Jameson', price: '790 ₺' },
-      { name: 'Jameson Black Barrel', price: '825 ₺' },
+      { name: 'Jamesson', price: '790 ₺' },
+      { name: 'Jamesson Black Barrel', price: '825 ₺' },
     ],
   },
   {
@@ -192,7 +192,7 @@ const BAR_MENU_COMMON: Section[] = [
       { name: 'Tanqueray', price: '900 ₺' },
       { name: 'Tanqueray 10', price: '975 ₺' },
       { name: 'Gin Mare', price: '950 ₺' },
-      { name: "Hendrick's", price: '990 ₺' },
+      { name: 'Hendrix', price: '990 ₺' },
       { name: 'Monkey 47', price: '950 ₺' },
       { name: 'Bombay', price: '790 ₺' },
     ],
@@ -207,7 +207,7 @@ const BAR_MENU_COMMON: Section[] = [
   {
     category: 'Likör (Shot)',
     items: [
-      { name: 'Jägermeister', price: '440 ₺' },
+      { name: 'Jagermeister', price: '440 ₺' },
       { name: 'Skinos', price: '440 ₺' },
     ],
   },
@@ -216,33 +216,33 @@ const BAR_MENU_COMMON: Section[] = [
     items: [
       { name: 'Captain Morgan White', price: '560 ₺' },
       { name: 'Captain Morgan Spiced', price: '560 ₺' },
-      { name: 'Zacapa', price: '560 ₺' },
+      { name: 'Zapaca', price: '560 ₺' },
     ],
   },
   {
     category: 'Konyak',
     items: [
-      { name: 'Rémy Martin V.S.O.P', price: '1.165 ₺' },
-      { name: 'Martell V.S', price: '960 ₺' },
+      { name: 'Remy Martin VSOP', price: '1.165 ₺' },
+      { name: 'Martell VS', price: '960 ₺' },
     ],
   },
   {
     category: 'Rakı',
     items: [
-      { name: 'Tekirdağ Altın 35cl', price: '2.400 ₺' },
-      { name: 'Tekirdağ Altın 50cl', price: '2.900 ₺' },
-      { name: 'Tekirdağ Altın 70cl', price: '4.050 ₺' },
-      { name: 'Tekirdağ Altın 100cl', price: '5.990 ₺' },
-      { name: 'Kulüp Rakı 35cl', price: '2.130 ₺' },
-      { name: 'Kulüp Rakı 70cl', price: '3.775 ₺' },
-      { name: 'Beylerbeyi 70cl', price: '4.335 ₺' },
-      { name: 'Beylerbeyi 100cl', price: '6.200 ₺' },
-      { name: 'Beylerbeyi Mavi 70cl', price: '4.250 ₺' },
-      { name: 'Beylerbeyi Teragold 35cl', price: '2.490 ₺' },
-      { name: 'Beylerbeyi Teragold 70cl', price: '4.475 ₺' },
-      { name: 'Yeni Rakı Yeni Seri 20cl', price: '1.325 ₺' },
-      { name: 'Yeni Rakı Yeni Seri 35cl', price: '1.925 ₺' },
-      { name: 'Yeni Rakı Yeni Seri 70cl', price: '3.750 ₺' },
+      { name: "Tekirdağ Altın '35", price: '2.400 ₺' },
+      { name: "Tekirdağ Altın '50", price: '2.900 ₺' },
+      { name: "Tekirdağ Altın '70", price: '4.050 ₺' },
+      { name: "Tekirdağ Altın '100", price: '5.990 ₺' },
+      { name: "Kulüp Rakı '35", price: '2.130 ₺' },
+      { name: "Kulüp Rakı '70", price: '3.775 ₺' },
+      { name: "Beylerbeyi '70", price: '4.335 ₺' },
+      { name: "Beylerbeyi '100", price: '6.200 ₺' },
+      { name: "Beylerbeyi Mavi '70", price: '4.250 ₺' },
+      { name: "Beylerbeyi Teragold '35", price: '2.490 ₺' },
+      { name: "Beylerbeyi Teragold '70", price: '4.475 ₺' },
+      { name: "Yeni Rakı Yeni Seri '20", price: '1.325 ₺' },
+      { name: "Yeni Rakı Yeni Seri '35", price: '1.925 ₺' },
+      { name: "Yeni Rakı Yeni Seri '70", price: '3.750 ₺' },
     ],
   },
   {
