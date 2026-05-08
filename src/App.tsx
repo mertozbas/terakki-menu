@@ -144,106 +144,105 @@ const BAR_MENU_COMMON: Section[] = [
     ],
   },
   {
-    category: 'Rakı',
+    category: 'Single Malt',
     items: [
-      { name: 'Tekirdağ Altın 35cl', price: '2.100 ₺' },
-      { name: 'Tekirdağ Altın 70cl', price: '3.850 ₺' },
-      { name: 'Tekirdağ Altın 100cl', price: '5.290 ₺' },
-      { name: 'Kulüp Rakı 35cl', price: '1.980 ₺' },
-      { name: 'Kulüp Rakı 70cl', price: '3.585 ₺' },
-      { name: 'Beylerbeyi 70cl', price: '3.985 ₺' },
-      { name: 'Beylerbeyi 100cl', price: '5.780 ₺' },
-      { name: 'Beylerbeyi Mavi 70cl', price: '3.870 ₺' },
-      { name: 'Beylerbeyi Teragold 35cl', price: '2.240 ₺' },
-      { name: 'Beylerbeyi Teragold 70cl', price: '3.980 ₺' },
-      { name: 'Yeni Rakı Yeni Seri 20cl', price: '1.200 ₺' },
-      { name: 'Yeni Rakı Yeni Seri 35cl', price: '1.850 ₺' },
-      { name: 'Yeni Rakı Yeni Seri 70cl', price: '3.480 ₺' },
+      { name: 'Talisker 10', price: '825 ₺' },
+      { name: 'Singleton 12', price: '825 ₺' },
+      { name: 'Glenlivet 12', price: '825 ₺' },
+      { name: 'Lagavulin 8', price: '935 ₺' },
+      { name: 'Macallan 12', price: '1.110 ₺' },
+    ],
+  },
+  {
+    category: 'Scotch',
+    items: [
+      { name: 'J.W. Black Label', price: '800 ₺' },
+      { name: 'J.W. Double Black', price: '825 ₺' },
+      { name: 'J.W. Gold Label', price: '1.000 ₺' },
+      { name: 'J.W. Blue Label', price: '2.800 ₺' },
+      { name: 'Chivas 18', price: '950 ₺' },
+    ],
+  },
+  {
+    category: 'Irish',
+    items: [
+      { name: 'Jameson', price: '790 ₺' },
+      { name: 'Jameson Black Barrel', price: '825 ₺' },
     ],
   },
   {
     category: 'Bourbon',
     items: [
-      { name: 'Jack Daniels', price: '725 ₺' },
-      { name: 'Gentleman Jack', price: '750 ₺' },
-    ],
-  },
-  {
-    category: 'Scotch Blended',
-    items: [
-      { name: 'Chivas 18', price: '1.100 ₺' },
-      { name: 'J.W Blue Label', price: '2.800 ₺' },
-      { name: 'J.W Gold Label', price: '750 ₺' },
-      { name: 'J.W Double Black', price: '725 ₺' },
-      { name: 'J.W Black Label', price: '730 ₺' },
-    ],
-  },
-  {
-    category: 'Single Malt',
-    items: [
-      { name: 'Ardbeg 12', price: '950 ₺' },
-      { name: 'Oban 14', price: '850 ₺' },
-      { name: 'Macallan', price: '1.750 ₺' },
-      { name: 'Lagavulin', price: '950 ₺' },
-      { name: 'Glenlivet', price: '950 ₺' },
-      { name: 'Aberlour', price: '950 ₺' },
-      { name: 'Singleton', price: '725 ₺' },
-      { name: 'Talisker', price: '825 ₺' },
-    ],
-  },
-  {
-    category: 'Cin',
-    items: [
-      { name: 'Bombay', price: '790 ₺' },
-      { name: 'Monkey 47', price: '825 ₺' },
-      { name: 'Hendricks', price: '825 ₺' },
-      { name: 'Gin Mare', price: '950 ₺' },
-      { name: 'Tanqueray 10', price: '825 ₺' },
-      { name: 'Tanqueray', price: '725 ₺' },
+      { name: 'Gentleman Jack', price: '800 ₺' },
+      { name: 'Woodford Reserve', price: '850 ₺' },
     ],
   },
   {
     category: 'Votka',
     items: [
-      { name: 'Grey Goose', price: '830 ₺' },
-      { name: 'Belvedere', price: '825 ₺' },
-      { name: 'Beluga', price: '850 ₺' },
-      { name: 'Ketel One', price: '725 ₺' },
+      { name: 'Ketel One', price: '790 ₺' },
+      { name: 'Beluga', price: '1.000 ₺' },
+      { name: 'Belvedere', price: '950 ₺' },
+      { name: 'Grey Goose', price: '950 ₺' },
+    ],
+  },
+  {
+    category: 'Cin',
+    items: [
+      { name: 'Tanqueray', price: '900 ₺' },
+      { name: 'Tanqueray 10', price: '975 ₺' },
+      { name: 'Gin Mare', price: '950 ₺' },
+      { name: "Hendrick's", price: '990 ₺' },
+      { name: 'Monkey 47', price: '950 ₺' },
+      { name: 'Bombay', price: '790 ₺' },
     ],
   },
   {
     category: 'Tekila',
     items: [
-      { name: 'Casamigos Mezcal', price: '625 ₺' },
-      { name: 'Casamigos Reposado', price: '595 ₺' },
-      { name: 'Casamigos Blanco', price: '577 ₺' },
-      { name: 'Don Julio', price: '650 ₺' },
+      { name: 'Don Julio', price: '600 ₺' },
+      { name: 'Casamigos', price: '600 ₺' },
+    ],
+  },
+  {
+    category: 'Likör (Shot)',
+    items: [
+      { name: 'Jägermeister', price: '440 ₺' },
+      { name: 'Skinos', price: '440 ₺' },
     ],
   },
   {
     category: 'Rom',
     items: [
-      { name: 'Spiced', price: '495 ₺' },
-      { name: 'Captain', price: '495 ₺' },
+      { name: 'Captain Morgan White', price: '560 ₺' },
+      { name: 'Captain Morgan Spiced', price: '560 ₺' },
+      { name: 'Zacapa', price: '560 ₺' },
     ],
   },
   {
     category: 'Konyak',
     items: [
-      { name: 'Hennessy X.O', price: '1.650 ₺' },
-      { name: 'Martell V.S', price: '895 ₺' },
-      { name: 'Rémy Martin V.S.O.P', price: '1.100 ₺' },
+      { name: 'Rémy Martin V.S.O.P', price: '1.165 ₺' },
+      { name: 'Martell V.S', price: '960 ₺' },
     ],
   },
   {
-    category: 'Shots',
+    category: 'Rakı',
     items: [
-      { name: 'Jameson Black Barrel', price: '725 ₺' },
-      { name: 'Jameson', price: '550 ₺' },
-      { name: 'Mezcal Casamigos', price: '625 ₺' },
-      { name: 'Reposado Casamigos', price: '595 ₺' },
-      { name: 'Casamigos', price: '577 ₺' },
-      { name: 'Don Julio', price: '650 ₺' },
+      { name: 'Tekirdağ Altın 35cl', price: '2.400 ₺' },
+      { name: 'Tekirdağ Altın 50cl', price: '2.900 ₺' },
+      { name: 'Tekirdağ Altın 70cl', price: '4.050 ₺' },
+      { name: 'Tekirdağ Altın 100cl', price: '5.990 ₺' },
+      { name: 'Kulüp Rakı 35cl', price: '2.130 ₺' },
+      { name: 'Kulüp Rakı 70cl', price: '3.775 ₺' },
+      { name: 'Beylerbeyi 70cl', price: '4.335 ₺' },
+      { name: 'Beylerbeyi 100cl', price: '6.200 ₺' },
+      { name: 'Beylerbeyi Mavi 70cl', price: '4.250 ₺' },
+      { name: 'Beylerbeyi Teragold 35cl', price: '2.490 ₺' },
+      { name: 'Beylerbeyi Teragold 70cl', price: '4.475 ₺' },
+      { name: 'Yeni Rakı Yeni Seri 20cl', price: '1.325 ₺' },
+      { name: 'Yeni Rakı Yeni Seri 35cl', price: '1.925 ₺' },
+      { name: 'Yeni Rakı Yeni Seri 70cl', price: '3.750 ₺' },
     ],
   },
   {
@@ -316,6 +315,7 @@ const BAR_MENU_EN: Section[] = [
       .replace('Cin', 'Gin')
       .replace('Votka', 'Vodka')
       .replace('Tekila', 'Tequila')
+      .replace('Likör (Shot)', 'Liqueur (Shot)')
       .replace('Rom', 'Rum')
       .replace('Konyak', 'Cognac')
       .replace('Şampanya', 'Champagne'),
