@@ -150,7 +150,7 @@ const BAR_MENU_COMMON: Section[] = [
       { name: 'Singleton 12', price: '825 ₺' },
       { name: 'Glenlivet 12', price: '825 ₺' },
       { name: 'Lagavulin 8', price: '935 ₺' },
-      { name: 'Macalallan 12', price: '1.110 ₺' },
+      { name: 'Macallan 12', price: '1.110 ₺' },
     ],
   },
   {
@@ -166,8 +166,8 @@ const BAR_MENU_COMMON: Section[] = [
   {
     category: 'Irish',
     items: [
-      { name: 'Jamesson', price: '790 ₺' },
-      { name: 'Jamesson Black Barrel', price: '825 ₺' },
+      { name: 'Jameson', price: '790 ₺' },
+      { name: 'Jameson Black Barrel', price: '825 ₺' },
     ],
   },
   {
@@ -192,7 +192,7 @@ const BAR_MENU_COMMON: Section[] = [
       { name: 'Tanqueray', price: '900 ₺' },
       { name: 'Tanqueray 10', price: '975 ₺' },
       { name: 'Gin Mare', price: '950 ₺' },
-      { name: 'Hendrix', price: '990 ₺' },
+      { name: "Hendrick's", price: '990 ₺' },
       { name: 'Monkey 47', price: '950 ₺' },
       { name: 'Bombay', price: '790 ₺' },
     ],
@@ -207,7 +207,7 @@ const BAR_MENU_COMMON: Section[] = [
   {
     category: 'Likör (Shot)',
     items: [
-      { name: 'Jagermeister', price: '440 ₺' },
+      { name: 'Jägermeister', price: '440 ₺' },
       { name: 'Skinos', price: '440 ₺' },
     ],
   },
@@ -216,13 +216,13 @@ const BAR_MENU_COMMON: Section[] = [
     items: [
       { name: 'Captain Morgan White', price: '560 ₺' },
       { name: 'Captain Morgan Spiced', price: '560 ₺' },
-      { name: 'Zapaca', price: '560 ₺' },
+      { name: 'Zacapa', price: '560 ₺' },
     ],
   },
   {
     category: 'Konyak',
     items: [
-      { name: 'Remy Martin VSOP', price: '1.165 ₺' },
+      { name: 'Rémy Martin VSOP', price: '1.165 ₺' },
       { name: 'Martell VS', price: '960 ₺' },
     ],
   },
