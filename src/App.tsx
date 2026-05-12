@@ -15,7 +15,7 @@ const FOOD_MENU_TR: Section[] = [
   {
     category: 'Başlangıç',
     items: [
-      { name: 'İtırlı Tereyağ & Ekşi Mayalı Ekmek', price: '0 ₺' },
+      { name: 'Itırlı Tereyağ & Ekşi Mayalı Ekmek', price: '0 ₺' },
       { name: 'İsli Yoğurt ve Kızarmış Patron Biberi', price: '447,84 ₺' },
       { name: 'Rakılı Çıtır Ördek', description: 'Ekşi sote radika ile', price: '581,14 ₺' },
       { name: 'Izgara Ahtapot', description: 'Chimichurri soslu', price: '999,18 ₺' },
@@ -26,11 +26,11 @@ const FOOD_MENU_TR: Section[] = [
       { name: 'Izgara Şiş Baby Kalamar', price: '892,48 ₺' },
       { name: 'Mangolu Levrek Marin', price: '810,45 ₺' },
       { name: 'Meze Trio I', description: 'Hardallı humus, girit ezme, cevizli muhammara', price: '739,58 ₺' },
-      { name: 'Meze Trio II', description: 'Köpük haydari, pembe sultan, avarecili süzme yoğurt', price: '739,58 ₺' },
+      { name: 'Meze Trio II', description: 'Köpük haydari, pembe sultan, ayva reçelli süzme yoğurt', price: '739,58 ₺' },
       { name: 'Izgara Ciğer', price: '890,35 ₺' },
       { name: 'Atom Kokoreç', description: 'Avokado ile', price: '1.265,96 ₺' },
       { name: 'Yeşil Zeytinli Soğan Dolması', price: '521,25 ₺' },
-      { name: 'Mersin Patates', description: 'Domuz pastırması, kül biber ile', price: '1.170,51 ₺' },
+      { name: 'Mersin Patates', description: 'Domuz pastırması, kıl biber ile', price: '1.170,51 ₺' },
     ],
   },
   {
@@ -75,11 +75,11 @@ const FOOD_MENU_EN: Section[] = [
       { name: 'Grilled Baby Calamari Skewer', price: '892,48 ₺' },
       { name: 'Mango Marinated Sea Bass', price: '810,45 ₺' },
       { name: 'Mezze Trio I', description: 'Mustard hummus, Cretan spread, walnut muhammara', price: '739,58 ₺' },
-      { name: 'Mezze Trio II', description: 'Foamy haydari, pink sultan, strained yogurt with avarece', price: '739,58 ₺' },
+      { name: 'Mezze Trio II', description: 'Foamy haydari, pink sultan, strained yogurt with quince jam', price: '739,58 ₺' },
       { name: 'Grilled Liver', price: '890,35 ₺' },
       { name: 'Atom Kokoreç', description: 'With avocado', price: '1.265,96 ₺' },
       { name: 'Green Olive Stuffed Onion', price: '521,25 ₺' },
-      { name: 'Mersin Potato', description: 'Cured pork, ember pepper', price: '1.170,51 ₺' },
+      { name: 'Mersin Potato', description: 'Cured pork, hair pepper', price: '1.170,51 ₺' },
     ],
   },
   {
