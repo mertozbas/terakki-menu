@@ -120,6 +120,36 @@ const FOOD_MENU_EN: Section[] = [
   },
 ];
 
+const TAPAS_MENU_TR: Section[] = [
+  {
+    category: 'Tapas',
+    items: [
+      { name: 'Mersin Patates', description: 'Trüf yağı ve parmesan ile', price: '447,34 ₺' },
+      { name: 'Fritto Misto', description: 'Kızarmış kalamar, karides, levrek, kabak, adaçayı', price: '1.130,23 ₺' },
+      { name: 'Şiş Karides', price: '892,12 ₺' },
+      { name: 'Enginar Cips', price: '547,64 ₺' },
+      { name: 'Baby Pizza', description: 'Füme antrikot, baby roka, kar parmesan', price: '840,78 ₺' },
+      { name: 'Ekmek Üstü', description: 'Ekşi maya ekmek, izmir tulum, parmesan, vişne reçeli', price: '660,32 ₺' },
+      { name: 'Kızarmış Midye', description: 'Limonlu mayonez ile', price: '542,27 ₺' },
+    ],
+  },
+];
+
+const TAPAS_MENU_EN: Section[] = [
+  {
+    category: 'Tapas',
+    items: [
+      { name: 'Mersin Potato', description: 'With truffle oil and parmesan', price: '447,34 ₺' },
+      { name: 'Fritto Misto', description: 'Fried calamari, shrimp, sea bass, zucchini, sage', price: '1.130,23 ₺' },
+      { name: 'Shrimp Skewer', price: '892,12 ₺' },
+      { name: 'Artichoke Chips', price: '547,64 ₺' },
+      { name: 'Baby Pizza', description: 'Smoked entrecôte, baby arugula, snow parmesan', price: '840,78 ₺' },
+      { name: 'Sourdough Toast', description: 'Sourdough, izmir tulum cheese, parmesan, sour cherry preserve', price: '660,32 ₺' },
+      { name: 'Fried Mussels', description: 'With lemon mayo', price: '542,27 ₺' },
+    ],
+  },
+];
+
 const BAR_MENU_COMMON: Section[] = [
   {
     category: 'Kırmızı Şarap',
@@ -447,7 +477,7 @@ const CHEF_MENUS_EN: ChefMenu[] = [
 const T = {
   tr: {
     tagline: "Ege'nin kalbinden samimi bir Alaçatı lezzeti",
-    tabs: { food: 'Yemek', bar: 'Bar', chef: 'Şef Menü' },
+    tabs: { food: 'Yemek', tapas: 'Tapas', bar: 'Bar', chef: 'Şef Menü' },
     chef: {
       title: 'Şef Menüleri',
       subtitle: 'Şefimizden iki(2) kişilik özel seçki menüler',
@@ -462,7 +492,7 @@ const T = {
   },
   en: {
     tagline: 'A sincere Alaçatı flavor from the heart of the Aegean',
-    tabs: { food: 'Food', bar: 'Bar', chef: "Chef's Menu" },
+    tabs: { food: 'Food', tapas: 'Tapas', bar: 'Bar', chef: "Chef's Menu" },
     chef: {
       title: "Chef's Menus",
       subtitle: 'Curated tasting menus by our chef for two',
@@ -478,7 +508,7 @@ const T = {
 } as const;
 
 type Lang = 'tr' | 'en';
-type Tab = 'food' | 'bar' | 'chef';
+type Tab = 'food' | 'tapas' | 'bar' | 'chef';
 
 /* ═══════════════════════════════════════════════════════════════════════
    SECTION RENDERER
@@ -556,6 +586,7 @@ export default function App() {
   const [tab, setTab] = useState<Tab>('food');
   const t = T[lang];
   const foodData = lang === 'tr' ? FOOD_MENU_TR : FOOD_MENU_EN;
+  const tapasData = lang === 'tr' ? TAPAS_MENU_TR : TAPAS_MENU_EN;
   const barData = lang === 'tr' ? BAR_MENU_TR : BAR_MENU_EN;
   const chefData = lang === 'tr' ? CHEF_MENUS_TR : CHEF_MENUS_EN;
 
@@ -592,12 +623,12 @@ export default function App() {
       {/* Tabs */}
       <nav className="sticky top-16 z-30 bg-[#e9e8e3]/95 backdrop-blur-sm">
         <div className="max-w-3xl mx-auto px-5 pb-3 pt-2">
-          <div className="grid grid-cols-3 border border-stone-300">
-            {(['food', 'bar', 'chef'] as Tab[]).map((k) => (
+          <div className="grid grid-cols-4 border border-stone-300">
+            {(['food', 'tapas', 'bar', 'chef'] as Tab[]).map((k) => (
               <button
                 key={k}
                 onClick={() => setTab(k)}
-                className={`px-3 py-3 text-[10px] md:text-[11px] tracking-[0.15em] uppercase transition-all border-l first:border-l-0 border-stone-300 ${
+                className={`px-2 py-3 text-[9px] md:text-[11px] tracking-[0.12em] md:tracking-[0.15em] uppercase transition-all border-l first:border-l-0 border-stone-300 ${
                   tab === k
                     ? 'bg-stone-900 text-white'
                     : 'text-stone-600 hover:text-stone-900 hover:bg-stone-200/40'
@@ -622,6 +653,20 @@ export default function App() {
               transition={{ duration: 0.35 }}
             >
               {foodData.map((s, idx) => (
+                <SectionBlock key={`${s.category}-${idx}`} section={s} idx={idx} />
+              ))}
+            </motion.div>
+          )}
+
+          {tab === 'tapas' && (
+            <motion.div
+              key="tapas"
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -4 }}
+              transition={{ duration: 0.35 }}
+            >
+              {tapasData.map((s, idx) => (
                 <SectionBlock key={`${s.category}-${idx}`} section={s} idx={idx} />
               ))}
             </motion.div>
