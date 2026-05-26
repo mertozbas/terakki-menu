@@ -43,8 +43,9 @@ const FOOD_MENU_TR: Section[] = [
     category: 'Salata',
     items: [
       { name: 'İstanbul Salata', price: '666,61 ₺' },
-      { name: 'Kuru Bacon & Yedikule Salatası', price: '779,61 ₺' },
-      { name: 'Çağla Yeşil Salata', price: '727,61 ₺' },
+      { name: 'Kuru Bacon & Yedikule Salatası', price: '729,61 ₺' },
+      { name: 'Terakki Yeşil Salata', price: '727,61 ₺' },
+      { name: 'Kaşık Salata', price: '727,56 ₺' },
     ],
   },
   {
@@ -97,8 +98,9 @@ const FOOD_MENU_EN: Section[] = [
     category: 'Salad',
     items: [
       { name: 'Istanbul Salad', price: '666,61 ₺' },
-      { name: 'Cured Bacon & Yedikule Salad', price: '779,61 ₺' },
-      { name: 'Green Almond Salad', price: '727,61 ₺' },
+      { name: 'Cured Bacon & Yedikule Salad', price: '729,61 ₺' },
+      { name: 'Terakki Green Salad', price: '727,61 ₺' },
+      { name: 'Spoon Salad', price: '727,56 ₺' },
     ],
   },
   {
