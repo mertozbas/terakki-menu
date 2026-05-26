@@ -9,7 +9,8 @@ const LOGO = '/terakki-menu/terakki-logo.png';
 ════════════════════════════════════════════════════════════════════════ */
 
 type Item = { name: string; description?: string; price?: string };
-type Section = { category: string; note?: string; items: Item[] };
+type WineProducer = { producer: string; items: Item[] };
+type Section = { category: string; note?: string; items: Item[]; producers?: WineProducer[] };
 
 const FOOD_MENU_TR: Section[] = [
   {
@@ -18,19 +19,24 @@ const FOOD_MENU_TR: Section[] = [
       { name: 'Itırlı Tereyağ & Ekşi Mayalı Ekmek', price: '0 ₺' },
       { name: 'İsli Yoğurt ve Kızarmış Patron Biberi', price: '447,84 ₺' },
       { name: 'Rakılı Çıtır Ördek', description: 'Ekşi sote radika ile', price: '581,14 ₺' },
-      { name: 'Izgara Ahtapot', description: 'Chimichurri soslu', price: '999,18 ₺' },
+      { name: 'Izgara Ahtapot', description: 'Chimichurri soslu', price: '1.270,73 ₺' },
       { name: 'Portakallı Enginar', description: 'Arpacık soğan ile', price: '777,17 ₺' },
-      { name: 'Pancar Carpaccio', description: 'Ricotta peyniri ile', price: '733,19 ₺' },
-      { name: 'İsli Tahinli Izgara Patlıcan', price: '653,28 ₺' },
+      { name: 'Pancar Carpaccio', description: 'Ricotta peyniri ile', price: '653,12 ₺' },
+      { name: 'İsli Tahinli Izgara Patlıcan', price: '653,42 ₺' },
       { name: 'Şiş Karides', description: 'Izgara lime & chili mayonez', price: '892,48 ₺' },
       { name: 'Izgara Şiş Baby Kalamar', price: '892,48 ₺' },
-      { name: 'Mangolu Levrek Marin', price: '810,45 ₺' },
-      { name: 'Meze Trio I', description: 'Hardallı humus, girit ezme, cevizli muhammara', price: '739,58 ₺' },
-      { name: 'Meze Trio II', description: 'Köpük haydari, pembe sultan, ayva reçelli süzme yoğurt', price: '739,58 ₺' },
+      { name: 'Mangolu Levrek Marin', price: '797,45 ₺' },
+      { name: 'Meze Trio I', description: 'Hardallı humus, girit ezme, ceviz reçelli muhammara', price: '739,58 ₺' },
+      { name: 'Meze Trio II', description: 'Köpük haydari, pembe sultan, atom', price: '739,58 ₺' },
       { name: 'Izgara Ciğer', price: '890,35 ₺' },
       { name: 'Atom Kokoreç', description: 'Avokado ile', price: '1.265,96 ₺' },
-      { name: 'Yeşil Zeytinli Soğan Dolması', price: '521,25 ₺' },
-      { name: 'Mersin Patates', description: 'Domuz pastırması, kıl biber ile', price: '1.170,51 ₺' },
+      { name: 'Yeşil Zeytinli Soğan Dolması', price: '777,19 ₺' },
+      { name: 'Mersin Patates', description: 'Füme antrikot, kıl biber ile', price: '1.170,51 ₺' },
+      { name: 'Çıtır Kabak Çiçeği', price: '588,22 ₺' },
+      { name: 'Ege Otlu Mücver', price: '539,21 ₺' },
+      { name: 'Asmalı Dolma', price: '747,34 ₺' },
+      { name: 'Izgara İstiridye Mantarı', price: '680,45 ₺' },
+      { name: 'Rakı Tabağı', description: 'Ovacık kavun, ezine peyniri, çıtır ceviz', price: '540,23 ₺' },
     ],
   },
   {
@@ -67,19 +73,24 @@ const FOOD_MENU_EN: Section[] = [
       { name: 'Herb Butter & Sourdough Bread', price: '0 ₺' },
       { name: 'Smoked Yogurt with Fried Padrón Pepper', price: '447,84 ₺' },
       { name: 'Crispy Duck with Rakı', description: 'With sautéed radicchio', price: '581,14 ₺' },
-      { name: 'Grilled Octopus', description: 'Chimichurri sauce', price: '999,18 ₺' },
+      { name: 'Grilled Octopus', description: 'Chimichurri sauce', price: '1.270,73 ₺' },
       { name: 'Orange Artichoke', description: 'With pearl onion', price: '777,17 ₺' },
-      { name: 'Beet Carpaccio', description: 'With ricotta cheese', price: '733,19 ₺' },
-      { name: 'Smoked Tahini Grilled Eggplant', price: '653,28 ₺' },
+      { name: 'Beet Carpaccio', description: 'With ricotta cheese', price: '653,12 ₺' },
+      { name: 'Smoked Tahini Grilled Eggplant', price: '653,42 ₺' },
       { name: 'Shrimp Skewer', description: 'Grilled with lime & chili mayo', price: '892,48 ₺' },
       { name: 'Grilled Baby Calamari Skewer', price: '892,48 ₺' },
-      { name: 'Mango Marinated Sea Bass', price: '810,45 ₺' },
-      { name: 'Mezze Trio I', description: 'Mustard hummus, Cretan spread, walnut muhammara', price: '739,58 ₺' },
-      { name: 'Mezze Trio II', description: 'Foamy haydari, pink sultan, strained yogurt with quince jam', price: '739,58 ₺' },
+      { name: 'Mango Marinated Sea Bass', price: '797,45 ₺' },
+      { name: 'Mezze Trio I', description: 'Mustard hummus, Cretan spread, muhammara with walnut jam', price: '739,58 ₺' },
+      { name: 'Mezze Trio II', description: 'Foamy haydari, pink sultan, atom', price: '739,58 ₺' },
       { name: 'Grilled Liver', price: '890,35 ₺' },
       { name: 'Atom Kokoreç', description: 'With avocado', price: '1.265,96 ₺' },
-      { name: 'Green Olive Stuffed Onion', price: '521,25 ₺' },
-      { name: 'Mersin Potato', description: 'Cured pork, hair pepper', price: '1.170,51 ₺' },
+      { name: 'Green Olive Stuffed Onion', price: '777,19 ₺' },
+      { name: 'Mersin Potato', description: 'Smoked entrecôte, hair pepper', price: '1.170,51 ₺' },
+      { name: 'Crispy Zucchini Flower', price: '588,22 ₺' },
+      { name: 'Aegean Herb Mücver', price: '539,21 ₺' },
+      { name: 'Stuffed Vine Leaves', price: '747,34 ₺' },
+      { name: 'Grilled Oyster Mushroom', price: '680,45 ₺' },
+      { name: 'Rakı Plate', description: 'Ovacık melon, Ezine cheese, crispy walnut', price: '540,23 ₺' },
     ],
   },
   {
@@ -111,36 +122,82 @@ const FOOD_MENU_EN: Section[] = [
 
 const BAR_MENU_COMMON: Section[] = [
   {
-    category: 'Kırmızı',
+    category: 'Kırmızı Şarap',
     note: 'Kadeh / Şişe',
-    items: [
-      { name: 'Ancyra Cabernet Sauvignon Syrah', price: '675 ₺ / 3.035 ₺' },
-      { name: 'Urla Boğazkere', price: '4.375 ₺' },
-      { name: 'Paşaeli Çalkarası', price: '5.115 ₺' },
-      { name: 'Vinkara Kalecik Karası', price: '5.375 ₺' },
-      { name: 'Urla Vourla', price: '1.110 ₺ / 5.535 ₺' },
-      { name: 'Paşaeli Yaşlı Asma', price: '5.865 ₺' },
+    items: [],
+    producers: [
+      {
+        producer: 'Ancyra',
+        items: [{ name: 'Cabernet Sauvignon-Syrah', price: '675 ₺ / 3.035 ₺' }],
+      },
+      {
+        producer: 'Urla',
+        items: [
+          { name: 'Boğazkere', price: '4.375 ₺' },
+          { name: 'Vourla', price: '1.100 ₺ / 5.535 ₺' },
+          { name: 'Tempus', price: '5.975 ₺' },
+        ],
+      },
+      {
+        producer: 'Paşaeli',
+        items: [
+          { name: 'Çalkarası', price: '5.115 ₺' },
+          { name: 'Yaşlı Asma', price: '5.865 ₺' },
+        ],
+      },
+      {
+        producer: 'Vinkara',
+        items: [{ name: 'Kalecik Karası', price: '5.375 ₺' }],
+      },
     ],
   },
   {
-    category: 'Beyaz',
+    category: 'Beyaz Şarap',
     note: 'Kadeh / Şişe',
-    items: [
-      { name: 'Ancyra Sauvignon Blanc', price: '675 ₺ / 3.275 ₺' },
-      { name: 'Kavaklıdere Emir', price: '825 ₺ / 3.295 ₺' },
-      { name: 'Kavaklıdere Misket', price: '3.295 ₺' },
-      { name: 'Plato Narince', price: '3.900 ₺' },
-      { name: "Sevilen Fronc de' Pied", price: '9.750 ₺' },
+    items: [],
+    producers: [
+      {
+        producer: 'Ancyra',
+        items: [{ name: 'Sauvignon Blanc', price: '675 ₺ / 3.275 ₺' }],
+      },
+      {
+        producer: 'Kavaklıdere',
+        items: [
+          { name: 'Emir', price: '825 ₺ / 3.495 ₺' },
+          { name: 'Misket', price: '3.495 ₺' },
+        ],
+      },
+      {
+        producer: 'Sevilen',
+        items: [{ name: "Fronc de' Pied", price: '9.750 ₺' }],
+      },
+      {
+        producer: 'Urla',
+        items: [{ name: 'Chardonnay', price: '3.795 ₺' }],
+      },
     ],
   },
   {
-    category: 'Rose',
+    category: 'Rose Şarap',
     note: 'Kadeh / Şişe',
-    items: [
-      { name: 'Ancyra Blush', price: '675 ₺ / 3.035 ₺' },
-      { name: 'Smyrna Blush', price: '875 ₺ / 3.500 ₺' },
-      { name: 'Sevilen Innocent Angel', price: '3.600 ₺' },
-      { name: 'Urla Serendias', price: '3.950 ₺' },
+    items: [],
+    producers: [
+      {
+        producer: 'Ancyra',
+        items: [{ name: 'Blush', price: '675 ₺ / 3.035 ₺' }],
+      },
+      {
+        producer: 'Smyrna',
+        items: [{ name: 'Blush', price: '3.500 ₺' }],
+      },
+      {
+        producer: 'Sevilen',
+        items: [{ name: 'Innocent Angel', price: '3.600 ₺' }],
+      },
+      {
+        producer: 'Urla',
+        items: [{ name: 'Serendias', price: '3.950 ₺' }],
+      },
     ],
   },
   {
@@ -309,9 +366,9 @@ const BAR_MENU_EN: Section[] = [
   ...BAR_MENU_COMMON.map((s) => ({
     ...s,
     category: s.category
-      .replace('Kırmızı', 'Red Wine')
-      .replace('Beyaz', 'White Wine')
-      .replace('Rose', 'Rosé Wine')
+      .replace('Kırmızı Şarap', 'Red Wine')
+      .replace('Beyaz Şarap', 'White Wine')
+      .replace('Rose Şarap', 'Rosé Wine')
       .replace('Cin', 'Gin')
       .replace('Votka', 'Vodka')
       .replace('Tekila', 'Tequila')
@@ -427,6 +484,27 @@ type Tab = 'food' | 'bar' | 'chef';
    SECTION RENDERER
 ════════════════════════════════════════════════════════════════════════ */
 
+const ItemRow: FC<{ item: Item }> = ({ item }) => (
+  <div className="flex items-baseline gap-4">
+    <div className="flex-1 min-w-0">
+      <div className="flex items-baseline">
+        <span className="font-serif text-stone-900 text-lg leading-snug">{item.name}</span>
+        <span className="flex-1 mx-2 border-b border-dotted border-stone-300 translate-y-[-6px]" />
+        {item.price && (
+          <span className="font-serif text-stone-700 text-base shrink-0 tracking-wide">
+            {item.price}
+          </span>
+        )}
+      </div>
+      {item.description && (
+        <p className="font-serif italic text-[14px] text-stone-500 leading-relaxed mt-1">
+          {item.description}
+        </p>
+      )}
+    </div>
+  </div>
+);
+
 const SectionBlock: FC<{ section: Section; idx: number }> = ({ section, idx }) => (
   <motion.div
     initial={{ opacity: 0, y: 12 }}
@@ -444,28 +522,28 @@ const SectionBlock: FC<{ section: Section; idx: number }> = ({ section, idx }) =
         </span>
       )}
     </div>
-    <div className="space-y-5">
-      {section.items.map((item, i) => (
-        <div key={`${item.name}-${i}`} className="flex items-baseline gap-4">
-          <div className="flex-1 min-w-0">
-            <div className="flex items-baseline">
-              <span className="font-serif text-stone-900 text-lg leading-snug">{item.name}</span>
-              <span className="flex-1 mx-2 border-b border-dotted border-stone-300 translate-y-[-6px]" />
-              {item.price && (
-                <span className="font-serif text-stone-700 text-base shrink-0 tracking-wide">
-                  {item.price}
-                </span>
-              )}
+    {section.producers ? (
+      <div className="space-y-7">
+        {section.producers.map((group) => (
+          <div key={group.producer}>
+            <h4 className="font-serif font-semibold text-stone-800 text-base tracking-wide mb-3">
+              {group.producer}
+            </h4>
+            <div className="space-y-3">
+              {group.items.map((item, i) => (
+                <ItemRow key={`${item.name}-${i}`} item={item} />
+              ))}
             </div>
-            {item.description && (
-              <p className="font-serif italic text-[14px] text-stone-500 leading-relaxed mt-1">
-                {item.description}
-              </p>
-            )}
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
+    ) : (
+      <div className="space-y-5">
+        {section.items.map((item, i) => (
+          <ItemRow key={`${item.name}-${i}`} item={item} />
+        ))}
+      </div>
+    )}
   </motion.div>
 );
 
