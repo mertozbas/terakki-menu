@@ -480,6 +480,9 @@ const T = {
   tr: {
     tagline: "Ege'nin kalbinden samimi bir Alaçatı lezzeti",
     tabs: { food: 'Yemek', tapas: 'Tapas', bar: 'Bar', chef: 'Şef Menü' },
+    tapas: {
+      notice: 'Yalnızca dış mekan masalarına özeldir',
+    },
     chef: {
       title: 'Şef Menüleri',
       subtitle: 'Şefimizden iki(2) kişilik özel seçki menüler',
@@ -495,6 +498,9 @@ const T = {
   en: {
     tagline: 'A sincere Alaçatı flavor from the heart of the Aegean',
     tabs: { food: 'Food', tapas: 'Tapas', bar: 'Bar', chef: "Chef's Menu" },
+    tapas: {
+      notice: 'Exclusive to outdoor tables',
+    },
     chef: {
       title: "Chef's Menus",
       subtitle: 'Curated tasting menus by our chef for two',
@@ -668,6 +674,14 @@ export default function App() {
               exit={{ opacity: 0, y: -4 }}
               transition={{ duration: 0.35 }}
             >
+              <div className="mb-10 text-center">
+                <div className="inline-flex items-center gap-2 border border-stone-400/60 px-4 py-2">
+                  <MapPin className="w-3.5 h-3.5 text-stone-500 shrink-0" />
+                  <span className="font-serif italic text-stone-600 text-sm tracking-wide">
+                    {t.tapas.notice}
+                  </span>
+                </div>
+              </div>
               {tapasData.map((s, idx) => (
                 <SectionBlock key={`${s.category}-${idx}`} section={s} idx={idx} />
               ))}
