@@ -52,7 +52,7 @@ const FOOD_MENU_TR: Section[] = [
     category: 'Ana Yemek',
     items: [
       { name: 'Izgara Levrek', price: '1.162,85 ₺' },
-      { name: 'Kuzu Sırt', description: 'Sıcak humus ve ege otları ile', price: '1.881,81 ₺' },
+      { name: 'Kuzu Sırtı', description: 'Sıcak humus ve ege otları ile', price: '1.881,81 ₺' },
       { name: 'Vişne Reçelli Minekop', price: '1.111,41 ₺' },
       { name: 'Kuru Domatesli Uskumru', price: '1.162,85 ₺' },
       { name: 'Porçini Mantarlı Bonfile', price: '1.881,81 ₺' },
@@ -353,9 +353,9 @@ const BAR_MENU_TR: Section[] = [
     items: [
       { name: 'Bloom', description: 'Jäger, limon suyu, yeşil elma suyu, yasemin çayı tonik' },
       { name: 'Medicine', description: 'Vodka, zencefil suyu, bal şurubu, lime suyu, sweet sour, soda' },
-      { name: 'Pink Blush', description: 'Çilek, vodka, Smirnoff North, sweet sour' },
+      { name: 'Pink Blush', description: 'Çilek, vodka, kırmızı meyve likörü, sweet sour' },
       { name: 'Terakki Flame', description: 'Tekila, aperol, passion fruit, citrus blend, chili Cardinal' },
-      { name: 'Duck & Rush', description: 'Rakı, Cardinal, fesleğen, citrus blend, cin' },
+      { name: 'Duck & Rush', description: 'Rakı, kavun likörü, fesleğen, citrus blend, cin' },
     ],
   },
   {
@@ -379,9 +379,9 @@ const BAR_MENU_EN: Section[] = [
     items: [
       { name: 'Bloom', description: 'Jäger, lemon juice, green apple juice, jasmine tea tonic' },
       { name: 'Medicine', description: 'Vodka, ginger juice, honey syrup, lime juice, sweet sour, soda' },
-      { name: 'Pink Blush', description: 'Strawberry, vodka, Smirnoff North, sweet sour' },
+      { name: 'Pink Blush', description: 'Strawberry, vodka, red fruit liqueur, sweet sour' },
       { name: 'Terakki Flame', description: 'Tequila, aperol, passion fruit, citrus blend, chili Cardinal' },
-      { name: 'Duck & Rush', description: 'Rakı, Cardinal, basil, citrus blend, gin' },
+      { name: 'Duck & Rush', description: 'Rakı, melon liqueur, basil, citrus blend, gin' },
     ],
   },
   {
