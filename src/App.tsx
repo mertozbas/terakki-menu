@@ -192,10 +192,7 @@ const BAR_MENU_COMMON: Section[] = [
       },
       {
         producer: 'Kavaklıdere',
-        items: [
-          { name: 'Emir', price: '825 ₺ / 3.495 ₺' },
-          { name: 'Misket', price: '3.495 ₺' },
-        ],
+        items: [{ name: 'Emir', price: '825 ₺ / 3.495 ₺' }],
       },
       {
         producer: 'Sevilen',
@@ -212,14 +209,6 @@ const BAR_MENU_COMMON: Section[] = [
     note: 'Kadeh / Şişe',
     items: [],
     producers: [
-      {
-        producer: 'Ancyra',
-        items: [{ name: 'Blush', price: '675 ₺ / 3.035 ₺' }],
-      },
-      {
-        producer: 'Smyrna',
-        items: [{ name: 'Blush', price: '3.500 ₺' }],
-      },
       {
         producer: 'Sevilen',
         items: [{ name: 'Innocent Angel', price: '3.600 ₺' }],
