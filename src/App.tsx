@@ -4,6 +4,9 @@ import { Instagram, Facebook, MapPin, Phone, Globe } from 'lucide-react';
 
 const LOGO = '/terakki-menu/terakki-logo.png';
 
+// Tapas sekmesini göstermek için true yap. Şu an gizli (veri ve çeviriler korunuyor).
+const SHOW_TAPAS = false;
+
 /* ═══════════════════════════════════════════════════════════════════════
    MENU DATA
 ════════════════════════════════════════════════════════════════════════ */
@@ -503,6 +506,10 @@ const T = {
 type Lang = 'tr' | 'en';
 type Tab = 'food' | 'tapas' | 'bar' | 'chef';
 
+const TABS: Tab[] = SHOW_TAPAS
+  ? ['food', 'tapas', 'bar', 'chef']
+  : ['food', 'bar', 'chef'];
+
 /* ═══════════════════════════════════════════════════════════════════════
    SECTION RENDERER
 ════════════════════════════════════════════════════════════════════════ */
@@ -616,8 +623,8 @@ export default function App() {
       {/* Tabs */}
       <nav className="sticky top-16 z-30 bg-[#e9e8e3]/95 backdrop-blur-sm">
         <div className="max-w-3xl mx-auto px-5 pb-3 pt-2">
-          <div className="grid grid-cols-4 border border-stone-300">
-            {(['food', 'tapas', 'bar', 'chef'] as Tab[]).map((k) => (
+          <div className={`grid border border-stone-300 ${TABS.length === 4 ? 'grid-cols-4' : 'grid-cols-3'}`}>
+            {TABS.map((k) => (
               <button
                 key={k}
                 onClick={() => setTab(k)}
