@@ -156,15 +156,22 @@ const BAR_MENU_COMMON: Section[] = [
     items: [],
     producers: [
       {
-        producer: 'Ancyra',
-        items: [{ name: 'Cabernet Sauvignon-Syrah', price: '675 ₺ / 3.035 ₺' }],
+        producer: 'Kayra',
+        items: [{ name: 'Buzbağ Reserve Öküzgözü-Boğazkere', price: '750 ₺ / 3.500 ₺' }],
+      },
+      {
+        producer: 'Kavaklıdere',
+        items: [
+          { name: 'Selection Öküzgözü-Boğazkere', price: '1.600 ₺ / 8.800 ₺' },
+          { name: 'Prestige Kalecik Karası', price: '10.250 ₺' },
+        ],
       },
       {
         producer: 'Urla',
         items: [
-          { name: 'Boğazkere', price: '4.375 ₺' },
-          { name: 'Vourla', price: '1.100 ₺ / 5.535 ₺' },
-          { name: 'Tempus', price: '5.975 ₺' },
+          { name: 'Vourla', price: '6.000 ₺' },
+          { name: 'Tempus', price: '5.535 ₺' },
+          { name: 'Boğazkere', price: '5.975 ₺' },
         ],
       },
       {
@@ -186,20 +193,31 @@ const BAR_MENU_COMMON: Section[] = [
     items: [],
     producers: [
       {
-        producer: 'Ancyra',
-        items: [{ name: 'Sauvignon Blanc', price: '675 ₺ / 3.275 ₺' }],
+        producer: 'Kayra',
+        items: [
+          { name: 'Old Vine Semillon', price: '5.100 ₺' },
+          { name: 'Allure Sauvignon Blanc', price: '800 ₺ / 3.500 ₺' },
+          { name: 'Allure Crispy Chardonnay', price: '800 ₺ / 3.500 ₺' },
+        ],
       },
       {
         producer: 'Kavaklıdere',
-        items: [{ name: 'Emir', price: '825 ₺ / 3.495 ₺' }],
+        items: [
+          { name: 'Selection Narince-Emir', price: '1.420 ₺ / 7.800 ₺' },
+          { name: 'Cotes d’Avanos Sauvignon Blanc', price: '10.250 ₺' },
+          { name: 'Ancyra Sauvignon Blanc', price: '1.100 ₺ / 6.200 ₺' },
+        ],
       },
       {
         producer: 'Sevilen',
-        items: [{ name: "Fronc de' Pied", price: '9.750 ₺' }],
+        items: [{ name: 'Fronc de’ Pied', price: '9.750 ₺' }],
       },
       {
-        producer: 'Urla',
-        items: [{ name: 'Chardonnay', price: '3.795 ₺' }],
+        producer: 'Lucien Arkas',
+        items: [
+          { name: 'Consensus Chardonnay', price: '5.700 ₺' },
+          { name: 'Antre Sauvignon Blanc', price: '750 ₺ / 3.200 ₺' },
+        ],
       },
     ],
   },
@@ -209,12 +227,23 @@ const BAR_MENU_COMMON: Section[] = [
     items: [],
     producers: [
       {
+        producer: 'Kavaklıdere',
+        items: [
+          { name: 'Egeo Rose Çalkarası, Grenache, Syrah', price: '7.900 ₺' },
+          { name: 'Cotes d’Avanos Rose Kalecik Karası', price: '10.250 ₺' },
+        ],
+      },
+      {
         producer: 'Sevilen',
-        items: [{ name: 'Innocent Angel', price: '3.600 ₺' }],
+        items: [{ name: 'Innocent Angel', price: '3.500 ₺' }],
       },
       {
         producer: 'Urla',
-        items: [{ name: 'Serendias', price: '3.950 ₺' }],
+        items: [{ name: 'Serendias', price: '965 ₺ / 3.600 ₺' }],
+      },
+      {
+        producer: 'Kayra',
+        items: [{ name: 'Allure Rose', price: '750 ₺ / 3.250 ₺' }],
       },
     ],
   },
