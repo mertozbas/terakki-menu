@@ -55,7 +55,7 @@ const FOOD_MENU_TR: Section[] = [
       { name: 'Izgara Levrek', price: '1.162,85 ₺' },
       { name: 'Kuzu Sırtı', description: 'Sıcak humus ve ege otları ile', price: '1.881,81 ₺' },
       { name: 'Vişne Reçelli Minekop', price: '1.111,41 ₺' },
-      { name: 'Porçini Mantarlı Bonfile', price: '1.881,81 ₺' },
+      { name: 'İstiridye Mantarlı Bonfile', price: '1.881,81 ₺' },
     ],
   },
   {
@@ -107,7 +107,7 @@ const FOOD_MENU_EN: Section[] = [
       { name: 'Grilled Sea Bass', price: '1.162,85 ₺' },
       { name: 'Lamb Loin', description: 'With warm hummus and Aegean herbs', price: '1.881,81 ₺' },
       { name: 'Meagre with Cherry Preserve', price: '1.111,41 ₺' },
-      { name: 'Tenderloin with Porcini Mushrooms', price: '1.881,81 ₺' },
+      { name: 'Tenderloin with Oyster Mushrooms', price: '1.881,81 ₺' },
     ],
   },
   {
@@ -403,7 +403,7 @@ type ChefMenu = { title: string; items: string[]; price: string };
 const CHEF_MENUS_TR: ChefMenu[] = [
   {
     title: 'Şef Menü I',
-    price: '5.181,21 ₺',
+    price: '6.220 ₺',
     items: [
       'Meze Trio I',
       'İsli Yoğurt ve Kızarmış Patron Biberi',
@@ -416,7 +416,7 @@ const CHEF_MENUS_TR: ChefMenu[] = [
   },
   {
     title: 'Şef Menü II',
-    price: '5.687,16 ₺',
+    price: '7.260 ₺',
     items: [
       'Meze Trio II',
       'Rakılı Çıtır Ördek (ekşi sote radika ile)',
@@ -432,7 +432,7 @@ const CHEF_MENUS_TR: ChefMenu[] = [
 const CHEF_MENUS_EN: ChefMenu[] = [
   {
     title: "Chef's Menu I",
-    price: '5.181,21 ₺',
+    price: '6.220 ₺',
     items: [
       'Mezze Trio I',
       'Smoked Yogurt with Fried Padrón Pepper',
@@ -445,7 +445,7 @@ const CHEF_MENUS_EN: ChefMenu[] = [
   },
   {
     title: "Chef's Menu II",
-    price: '5.687,16 ₺',
+    price: '7.260 ₺',
     items: [
       'Mezze Trio II',
       'Crispy Duck with Rakı (with sautéed radicchio)',
