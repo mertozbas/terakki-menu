@@ -219,6 +219,14 @@ const BAR_MENU_COMMON: Section[] = [
           { name: 'Antre Sauvignon Blanc', price: '750 ₺ / 3.200 ₺' },
         ],
       },
+      {
+        producer: '7 Bilgeler',
+        items: [{ name: 'Anaxagoras Chardonnay', price: '1.200 ₺ / 5.800 ₺' }],
+      },
+      {
+        producer: 'Suvla',
+        items: [{ name: 'Roussanne, Marsanne', price: '1.400 ₺ / 6.100 ₺' }],
+      },
     ],
   },
   {
